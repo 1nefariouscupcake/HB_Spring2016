@@ -8,9 +8,10 @@
 # (Part 2): Fix any bugs and make it work!
 
 bill = raw_input("How much was your bill?")
+percentage = raw_input("What percent would you like to tip?")
 
-tip = bill * .18
+tip = float(bill) * (float(percentage) * .01)
 
-total_bill = bill + tip
+total_bill = float(bill) + tip
 
 print "The tip is %f and the total bill is %f ." % (tip, total_bill)
